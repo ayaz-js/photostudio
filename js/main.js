@@ -1,3 +1,10 @@
+let policyBtn = document.querySelector('.ps-policy__btn'),
+policyBox = document.querySelector('.ps-policy');
+
+policyBtn.addEventListener('click', () => {
+  policyBox.style.display = 'none';
+});
+
 // --> Begin Gallery MagnificPopup
 
 $(document).ready(function() {

@@ -48,5 +48,13 @@
   .ps-service__img {
     width: 100px;
   }
+  .ps-policy {
+    padding: 10px;
+  }
+  .ps-policy__btn {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */

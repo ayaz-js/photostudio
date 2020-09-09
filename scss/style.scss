@@ -158,11 +158,13 @@ $hoverTransition: 0.5s ease;
         font-size: 14px;
         margin-top: 20px;
     }
+
     &__social {
         display: flex;
         text-align: center;
-	    margin-top: 30px;
+        margin-top: 30px;
     }
+
     &__social-icon {
         margin-right: 50px;
         margin-bottom: 20px;
@@ -178,30 +180,31 @@ $hoverTransition: 0.5s ease;
         transition: all 0.5s ease;
         color: #fff;
         cursor: pointer;
-    &:hover {
-        box-shadow: 0px 0px 20px 5px;
+
+        &:hover {
+            box-shadow: 0px 0px 20px 5px;
         }
     }
 }
 
 .twitter:hover {
-	border-color: #00ACEE;
-	color: #00ACEE;
+    border-color: #00ACEE;
+    color: #00ACEE;
 }
 
 .instagram:hover {
-	border-color: #cb54a6;
-	color: #cb54a6;
+    border-color: #cb54a6;
+    color: #cb54a6;
 }
 
 .whatsapp:hover {
-	border-color: #25D366;
-	color: #25D366;
+    border-color: #25D366;
+    color: #25D366;
 }
 
 .facebook:hover {
-	border-color: #3B5998;
-	color: #3B5998;
+    border-color: #3B5998;
+    color: #3B5998;
 }
 
 .ps-service {
@@ -381,6 +384,39 @@ $hoverTransition: 0.5s ease;
 
         span {
             color: #ceb194;
+        }
+    }
+}
+
+.ps-policy {
+    background: rgba(0, 0, 0, .85);
+    position: fixed;
+    padding: 20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    &__text {
+        color: #fff;
+        font-size: 12px;
+        display: inline-block;
+    }
+
+    &__btn {
+        font-size: 14px;
+        font-weight: 300;
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        border: 1px solid #FFF;
+        transition: all .15s ease .05s;
+        background: transparent;
+        color: #fff;
+        margin-left: 20px;
+        &:hover {
+            color: #000;
+            background: #fff;
         }
     }
 }
