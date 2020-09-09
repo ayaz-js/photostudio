@@ -401,6 +401,10 @@ $hoverTransition: 0.5s ease;
         color: #fff;
         font-size: 12px;
         display: inline-block;
+        & a {
+            color: #ceb194;
+            text-decoration: underline;
+        }
     }
 
     &__btn {
