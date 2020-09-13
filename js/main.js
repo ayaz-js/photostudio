@@ -11,7 +11,7 @@ body = document.querySelector('body');
 for (let i = 0; i < feedBackBtn.length; i++) {
   feedBackBtn[i].addEventListener('click', () => {
     feedBack.style.display = 'block';
-    body.style.overflow = 'none';
+    body.style.overflow = 'hidden';
   });
 }
 
