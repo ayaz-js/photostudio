@@ -464,7 +464,6 @@ $hoverTransition: 0.5s ease;
         background: none;
         margin-left: auto;
         border: 0;
-        transition: background .15s ease .05s;
 
         &:focus {
             outline: none;
@@ -473,7 +472,7 @@ $hoverTransition: 0.5s ease;
         &-icon {
             position: absolute;
             top: 4px;
-            left: 15px;
+            left: 13px;
             bottom: 5px;
             border: 1px solid #FFF;
         }

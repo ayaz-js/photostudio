@@ -522,8 +522,6 @@
   background: none;
   margin-left: auto;
   border: 0;
-  -webkit-transition: background .15s ease .05s;
-  transition: background .15s ease .05s;
 }
 
 .ps-modal__close:focus {
@@ -533,7 +531,7 @@
 .ps-modal__close-icon {
   position: absolute;
   top: 4px;
-  left: 15px;
+  left: 13px;
   bottom: 5px;
   border: 1px solid #FFF;
 }
