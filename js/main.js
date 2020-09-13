@@ -1,22 +1,38 @@
+// --> My Script Begin
+
 let policyBtn = document.querySelector('.ps-policy__btn'),
 policyBox = document.querySelector('.ps-policy'),
+feedBack = document.querySelector('.ps-modal'),
 feedBackBtn = document.querySelectorAll('.btn'),
 feedBackCloseBtn = document.querySelector('.ps-modal__close'),
-feedBack = document.querySelector('.ps-modal');
+body = document.querySelector('body');
+
 
 for (let i = 0; i < feedBackBtn.length; i++) {
   feedBackBtn[i].addEventListener('click', () => {
     feedBack.style.display = 'block';
+    body.style.overflow = 'none';
   });
 }
 
 feedBackCloseBtn.addEventListener('click', () => {
   feedBack.style.display = 'none';
+  body.style.overflow = 'auto';
 });
+
+window.onclick = function(event) {
+  if (event.target == feedBack) {
+    feedBack.style.display = 'none';
+    body.style.overflow = 'auto';
+  }
+}
 
 policyBtn.addEventListener('click', () => {
   policyBox.style.display = 'none';
 });
+
+//  --> My Script End
+
 
 // --> Begin Gallery MagnificPopup
 
