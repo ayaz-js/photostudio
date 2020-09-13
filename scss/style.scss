@@ -401,6 +401,7 @@ $hoverTransition: 0.5s ease;
         color: #fff;
         font-size: 12px;
         display: inline-block;
+
         & a {
             color: #ceb194;
             text-decoration: underline;
@@ -418,9 +419,88 @@ $hoverTransition: 0.5s ease;
         background: transparent;
         color: #fff;
         margin-left: 20px;
+
         &:hover {
             color: #000;
             background: #fff;
         }
+    }
+}
+
+.ps-modal {
+    position: fixed;
+    display: none;
+    width: 500px;
+    height: 350px;
+    background-color: $bgColorOne;
+    left: 30%;
+    top: 100px;
+
+    &__content {
+        position: relative;
+    }
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: $bgColorTwo;
+        padding: 10px 0 10px 10px;
+        width: 100%;
+        color: #fff;
+    }
+
+    &__close {
+        width: 30px;
+        height: 30px;
+        background: none;
+        position: relative;
+        margin-left: auto;
+        border: 0;
+        transition: background .15s ease .05s;
+
+        &-icon {
+            position: absolute;
+            top: 4px;
+            left: 15px;
+            bottom: 5px;
+            border: 1px solid #FFF;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-left {
+            transform: rotate(135deg);
+        }
+
+        &-right {
+            transform: rotate(45deg);
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 10px;
+
+        &-line {
+            background-color: #363636;
+            border: 1px;
+            margin-top: 15px;
+            padding-left: 5px;
+            height: 40px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__submit {
+        margin-top: 10px;
+        width: 150px;
     }
 }

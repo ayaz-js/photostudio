@@ -1,5 +1,18 @@
 let policyBtn = document.querySelector('.ps-policy__btn'),
-policyBox = document.querySelector('.ps-policy');
+policyBox = document.querySelector('.ps-policy'),
+feedBackBtn = document.querySelectorAll('.btn'),
+feedBackCloseBtn = document.querySelector('.ps-modal__close'),
+feedBack = document.querySelector('.ps-modal');
+
+for (let i = 0; i < feedBackBtn.length; i++) {
+  feedBackBtn[i].addEventListener('click', () => {
+    feedBack.style.display = 'block';
+  });
+}
+
+feedBackCloseBtn.addEventListener('click', () => {
+  feedBack.style.display = 'none';
+});
 
 policyBtn.addEventListener('click', () => {
   policyBox.style.display = 'none';
