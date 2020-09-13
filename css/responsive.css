@@ -56,5 +56,8 @@
     margin-left: 0px;
     margin-top: 10px;
   }
+  .ps-modal__container {
+    width: 320px;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */
