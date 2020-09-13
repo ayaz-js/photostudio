@@ -60,5 +60,8 @@
     width: 320px;
     height: 300px;
   }
+  .ps-modal__form {
+    margin-top: 100px;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */
