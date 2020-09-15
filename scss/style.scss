@@ -396,6 +396,8 @@ $hoverTransition: 0.5s ease;
     bottom: 0;
     left: 0;
     z-index: 1000;
+    transition: 0.8s;
+    
 
     &__text {
         color: #fff;
@@ -415,7 +417,7 @@ $hoverTransition: 0.5s ease;
         padding: 10px 20px;
         text-align: center;
         border: 1px solid #FFF;
-        transition: all .15s ease .05s;
+        transition: 0.3s ease;
         background: transparent;
         color: #fff;
         margin-left: 20px;
@@ -423,6 +425,9 @@ $hoverTransition: 0.5s ease;
         &:hover {
             color: #000;
             background: #fff;
+        }
+        &:focus {
+            outline: none;
         }
     }
 }
@@ -435,7 +440,9 @@ $hoverTransition: 0.5s ease;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 100;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
 
     &__container {
         position: fixed;
@@ -508,5 +515,8 @@ $hoverTransition: 0.5s ease;
     &__submit {
         margin-top: 10px;
         width: 150px;
+        &:hover {
+            background-color: #ffd1a3;;
+        }
     }
 }

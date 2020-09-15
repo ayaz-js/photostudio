@@ -445,6 +445,8 @@
   bottom: 0;
   left: 0;
   z-index: 1000;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .ps-policy__text {
@@ -465,8 +467,8 @@
   padding: 10px 20px;
   text-align: center;
   border: 1px solid #FFF;
-  -webkit-transition: all .15s ease .05s;
-  transition: all .15s ease .05s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   background: transparent;
   color: #fff;
   margin-left: 20px;
@@ -477,6 +479,10 @@
   background: #fff;
 }
 
+.ps-policy__btn:focus {
+  outline: none;
+}
+
 .ps-modal {
   position: fixed;
   left: 0;
@@ -485,7 +491,10 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 100;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .ps-modal__container {
@@ -573,5 +582,9 @@
 .ps-modal__submit {
   margin-top: 10px;
   width: 150px;
+}
+
+.ps-modal__submit:hover {
+  background-color: #ffd1a3;
 }
 /*# sourceMappingURL=style.css.map */

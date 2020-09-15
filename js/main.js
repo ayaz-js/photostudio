@@ -2,33 +2,36 @@
 
 let policyBtn = document.querySelector('.ps-policy__btn'),
 policyBox = document.querySelector('.ps-policy'),
-feedBack = document.querySelector('.ps-modal'),
-feedBackBtn = document.querySelectorAll('.btn'),
-feedBackCloseBtn = document.querySelector('.ps-modal__close'),
+openModal = document.querySelector('.ps-modal'),
+openModalBtn = document.querySelectorAll('.btn'),
+modalCloseBtn = document.querySelector('.ps-modal__close'),
 body = document.querySelector('body');
 
 
-for (let i = 0; i < feedBackBtn.length; i++) {
-  feedBackBtn[i].addEventListener('click', () => {
-    feedBack.style.display = 'block';
+for (let i = 0; i < openModalBtn.length; i++) {
+  openModalBtn[i].addEventListener('click', () => {
+    openModal.style.opacity = '5';
+    openModal.style.visibility = 'visible';
     body.style.overflow = 'hidden';
   });
 }
 
-feedBackCloseBtn.addEventListener('click', () => {
-  feedBack.style.display = 'none';
+modalCloseBtn.addEventListener('click', () => {
+  openModal.style.opacity = '0';
+  openModal.style.visibility = 'hidden';
   body.style.overflow = 'auto';
 });
 
 window.onclick = function(event) {
   if (event.target == feedBack) {
-    feedBack.style.display = 'none';
+    openModal.style.opacity = '0';
+    openModal.style.visibility = 'hidden';
     body.style.overflow = 'auto';
   }
 }
 
 policyBtn.addEventListener('click', () => {
-  policyBox.style.display = 'none';
+  policyBox.style.bottom = '-100%';
 });
 
 //  --> My Script End
