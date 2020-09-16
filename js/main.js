@@ -23,7 +23,7 @@ modalCloseBtn.addEventListener('click', () => {
 });
 
 window.onclick = function(event) {
-  if (event.target == feedBack) {
+  if (event.target == openModal) {
     openModal.style.opacity = '0';
     openModal.style.visibility = 'hidden';
     body.style.overflow = 'auto';
